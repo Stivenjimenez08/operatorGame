@@ -30,7 +30,7 @@ function generateOperation() {
         correctAnswer = operand2;
         document.getElementById('question').textContent = `${operand1} + ? = ${result}`;
         answerOptions = [operand2];
-        while (answerOptions.length < 21) {
+        while (answerOptions.length < 7) {
             let randomAnswer = Math.floor(Math.random() * 200) + 1;
             if (!answerOptions.includes(randomAnswer)) {
                 answerOptions.push(randomAnswer);
@@ -53,7 +53,7 @@ function generateOperation() {
             document.getElementById('question').textContent = `${operand1} - ? = ${result}`;
         }
         answerOptions = [operand2];
-        while (answerOptions.length < 28) {
+        while (answerOptions.length < 14) {
             let randomAnswer = Math.floor(Math.random() * 400) + 1;
             if (!answerOptions.includes(randomAnswer)) {
                 answerOptions.push(randomAnswer);
@@ -90,7 +90,7 @@ function generateOperation() {
         }
         correctAnswer = operand2;
         answerOptions = [operand2];
-        while (answerOptions.length < 35) {
+        while (answerOptions.length < 21) {
             let randomAnswer = Math.floor(Math.random() * 400) + 1;
             if (!answerOptions.includes(randomAnswer)) {
                 answerOptions.push(randomAnswer);
