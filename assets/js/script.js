@@ -30,7 +30,7 @@ function generateOperation() {
         correctAnswer = operand2;
         document.getElementById('question').textContent = `${operand1} + ? = ${result}`;
         answerOptions = [operand2];
-        while (answerOptions.length < 7) {
+        while (answerOptions.length < 14) {
             let randomAnswer = Math.floor(Math.random() * 200) + 1;
             if (!answerOptions.includes(randomAnswer)) {
                 answerOptions.push(randomAnswer);
